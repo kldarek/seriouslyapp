@@ -36,7 +36,7 @@ Seriously is a personal side project run by one individual. I may modify, suspen
 
 ## Accounts & Security
 
-You may sign in via Apple or Google. Keep your credentials secure and your account information up to date. You’re responsible for activities under your account. If you suspect unauthorized access, contact **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)** immediately.
+You may sign in via Apple or Google. Keep your credentials secure and your account information up to date. You’re responsible for activities under your account. If you suspect unauthorized access, contact **[seriouslyapp.com@gmail.com](mailto\:seriouslyapp.com@gmail.com)** immediately.
 
 ---
 
@@ -71,7 +71,7 @@ Purchases use **Apple’s in‑app purchase** system. Apple bills your Apple ID;
 
 ## Termination
 
-You can stop using the App anytime. You may request account deletion via **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)** (or via any in‑app deletion feature). I may suspend or terminate access for violations, legal requirements, discontinuation, or long‑term inactivity. If terminated for breach, refunds may not be available.
+You can stop using the App anytime. You may request account deletion via **[seriouslyapp.com@gmail.com](mailto\:seriouslyapp.com@gmail.com)** (or via any in‑app deletion feature). I may suspend or terminate access for violations, legal requirements, discontinuation, or long‑term inactivity. If terminated for breach, refunds may not be available.
 
 ---
 
@@ -145,5 +145,5 @@ These Terms are governed by **Polish law** (subject to any mandatory EU consumer
 
 ## Contact
 
-All communications (support, privacy, legal): **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)**
+All communications (support, privacy, legal): **[seriouslyapp.com@gmail.com](mailto\:seriouslyapp.com@gmail.com)**
 

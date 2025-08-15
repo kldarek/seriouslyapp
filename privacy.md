@@ -16,7 +16,7 @@ Seriously (the "App") is an iOS mobile app that provides AI‑powered diet coach
 
 ## Data Controller and Contact
 
-The data controller is the **individual developer of Seriously (EU‑based private person)**. For all privacy and support matters, contact: **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)**.
+The data controller is the **individual developer of Seriously (EU‑based private person)**. For all privacy and support matters, contact: **[seriouslyapp.com@gmail.com](mailto\:seriouslyapp.com@gmail.com)**.
 
 ---
 
@@ -86,7 +86,7 @@ I **do not** use third‑party data for advertising or profiling, and I avoid co
 
 ## Your Rights (GDPR)
 
-You can request **access, correction, deletion, restriction, portability,** and **objection** (including to marketing). You can withdraw consent at any time. To exercise rights, email **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)**. I may need to verify your identity. You also have the right to complain to your local data protection authority.
+You can request **access, correction, deletion, restriction, portability,** and **objection** (including to marketing). You can withdraw consent at any time. To exercise rights, email **[seriouslyapp.com@gmail.com](mailto\:seriouslyapp.com@gmail.com)**. I may need to verify your identity. You also have the right to complain to your local data protection authority.
 
 ---
 
@@ -122,4 +122,4 @@ I may update this Privacy Policy. Material changes will be notified in‑app or 
 
 ## Contact
 
-**Email:** **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)**
+**Email:** **[seriouslyapp.com@gmail.com](mailto\:seriouslyapp.com@gmail.com)**
