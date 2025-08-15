@@ -10,6 +10,133 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Parallax effect for hero section
+            window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset;
+                const hero = document.querySelector('.hero');
+                if (hero) {
+                    hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+                }
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for scroll animations
+            document.querySelectorAll('.feature-card, .step, .coach-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+            // Add sparkle effect to buttons
+            function createSparkle(button) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.cssText = `
+                    position: absolute;
+                    width: 4px;
+                    height: 4px;
+                    background: #fff;
+                    border-radius: 50%;
+                    pointer-events: none;
+                    animation: sparkleAnim 0.8s ease-out forwards;
+                `;
+                
+                const rect = button.getBoundingClientRect();
+                sparkle.style.left = Math.random() * rect.width + 'px';
+                sparkle.style.top = Math.random() * rect.height + 'px';
+                
+                button.appendChild(sparkle);
+                
+                setTimeout(() => sparkle.remove(), 800);
+            }
+
+            // Add sparkle effect to buttons on hover
+            document.querySelectorAll('.primary-button, .cta-button').forEach(button => {
+                button.style.position = 'relative';
+                button.style.overflow = 'hidden';
+                
+                button.addEventListener('mouseenter', function() {
+                    const sparkleInterval = setInterval(() => createSparkle(this), 100);
+                    this.sparkleInterval = sparkleInterval;
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    clearInterval(this.sparkleInterval);
+                });
+            });
+
+            // Add random emoji reactions to feature cards
+            const emojis = ['🔥', '💎', '🌟', '⚡', '🎯', '💪', '🚀', '🎊', '✨', '🙌'];
+            document.querySelectorAll('.feature-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const emoji = document.createElement('div');
+                    emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                    emoji.style.cssText = `
+                        position: absolute;
+                        font-size: 2rem;
+                        pointer-events: none;
+                        animation: emojiPop 1s ease-out forwards;
+                        z-index: 1000;
+                    `;
+                    
+                    const rect = this.getBoundingClientRect();
+                    emoji.style.left = rect.left + rect.width/2 + 'px';
+                    emoji.style.top = rect.top + rect.height/2 + 'px';
+                    
+                    document.body.appendChild(emoji);
+                    setTimeout(() => emoji.remove(), 1000);
+                });
+            });
+        });
+    </script>
+    <style>
+        @keyframes sparkleAnim {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(0deg);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1) rotate(180deg);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0) rotate(360deg);
+            }
+        }
+
+        @keyframes emojiPop {
+            0% {
+                opacity: 0;
+                transform: scale(0) translateY(0);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.5) translateY(-20px);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.5) translateY(-50px);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,7 +157,7 @@
         <section class="hero">
             <div class="container">
                 <h2 class="hero-title">Your AI-Powered Personal Nutrition Coach</h2>
-                <p class="hero-subtitle">Transform your eating habits with an intelligent companion that understands you. Track meals effortlessly, get instant nutritional insights, and receive personalized coaching that adapts to your style.</p>
+                <p class="hero-subtitle">Ready to ditch boring diet apps? Get an AI coach that actually gets you! Snap pics, chat naturally, and watch your nutrition game level up with zero hassle. It's like having a genius nutritionist in your pocket!</p>
                 <div class="hero-cta">
                     <a href="#" class="primary-button">Get Started</a>
                     <div class="app-badges">
@@ -43,37 +170,31 @@
 
         <section class="features">
             <div class="container">
-                <h2 class="section-title">🚀 Key Features</h2>
+                <h2 class="section-title">Why You'll Love It</h2>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-icon">📸</div>
-                        <h3>Snap & Track</h3>
-                        <p>Take a photo of your meal and get instant calorie and macro breakdowns powered by Gemini AI</p>
+                        <h3>Magic Photo Tracking</h3>
+                        <p>Just snap and BAM! Instant calorie breakdown with AI so smart it makes other apps jealous. No more tedious logging - your camera does the work!</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🎤</div>
-                        <h3>Voice Logging</h3>
-                        <p>Too busy to type? Just tell your coach what you ate with voice messages</p>
+                        <h3>Talk It Out</h3>
+                        <p>"Hey coach, I just demolished a burrito!" That's it! Voice logging so natural, it's like texting your bestie who happens to be a nutrition genius.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>Smart Analytics</h3>
-                        <p>Track your 7-day trends with beautiful charts showing calories, protein, and nutritional patterns</p>
+                        <h3>Mind-Blowing Insights</h3>
+                        <p>Charts so beautiful they belong in a museum! Watch your nutrition patterns unfold with 7-day trends that actually make sense (and look amazing).</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3>Personalized Goals</h3>
-                        <p>Set custom calorie and protein targets that align with your fitness journey</p>
+                        <h3>Goals That Actually Work</h3>
+                        <p>No more cookie-cutter targets! Set goals that fit YOUR life, YOUR body, YOUR dreams. Whether you're bulking, cutting, or just trying to feel awesome!</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">🤖</div>
-                        <h3>6 Coaching Personalities</h3>
-                        <p>Choose a coaching style that motivates you - from gentle guidance to tough love</p>
+                        <h3>Your Perfect AI Match</h3>
+                        <p>Six unique coaches, six different vibes! Want a cheerleader? A wise mentor? A no-nonsense challenger? Pick your perfect motivation style!</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-icon">💾</div>
-                        <h3>Never Lose Progress</h3>
-                        <p>All your data syncs securely to the cloud with Google authentication</p>
+                        <h3>Rock-Solid Backup</h3>
+                        <p>Your progress is safer than Fort Knox! Google-powered cloud sync means your data follows you everywhere. Phone died? No problem!</p>
                     </div>
                 </div>
             </div>
@@ -81,22 +202,22 @@
 
         <section class="how-it-works">
             <div class="container">
-                <h2 class="section-title">📱 How It Works</h2>
+                <h2 class="section-title">Getting Started is Stupid Easy</h2>
                 <div class="steps">
                     <div class="step">
                         <div class="step-number">1</div>
-                        <h3>Sign In Securely</h3>
-                        <p>Quick setup with Google OAuth - your data stays private and secure</p>
+                        <h3>One-Tap Sign In</h3>
+                        <p>Google login = instant access! No passwords to remember, no forms to fill. Just tap and you're in. Privacy-first, always!</p>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
-                        <h3>Choose Your Coach</h3>
-                        <p>Pick from 6 unique coaching personalities that match your motivation style</p>
+                        <h3>Meet Your Coach Squad</h3>
+                        <p>Swipe through 6 amazing AI personalities and find your perfect match. It's like dating, but for nutrition coaching (and way less awkward)!</p>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
-                        <h3>Start Tracking</h3>
-                        <p>Snap photos, send voice notes, or type - your AI coach analyzes everything instantly</p>
+                        <h3>Live Your Best Life</h3>
+                        <p>Eat, snap, chat, repeat! Your AI coach handles the number-crunching while you focus on feeling amazing. It's nutrition tracking without the work!</p>
                     </div>
                 </div>
             </div>
@@ -104,37 +225,37 @@
 
         <section class="coaches">
             <div class="container">
-                <h2 class="section-title">🎭 Meet Your Coaches</h2>
+                <h2 class="section-title">Your Dream Team Awaits</h2>
                 <div class="coaches-grid">
                     <div class="coach-card">
                         <img src="assets/images/guide.jpg" alt="The Guide Coach" class="coach-image">
                         <h3>The Guide</h3>
-                        <p>Wise and calm, helps you reflect and find your own answers</p>
+                        <p>Like having Yoda as your nutrition coach! Calm, wise, and always helps you discover your own path to wellness. Very zen, much wisdom!</p>
                     </div>
                     <div class="coach-card">
                         <img src="assets/images/mentor.jpg" alt="The Mentor Coach" class="coach-image">
                         <h3>The Mentor</h3>
-                        <p>Knowledgeable teacher who explains the "why" behind nutrition</p>
+                        <p>Your friendly neighborhood nutrition nerd! Loves explaining why carbs aren't evil and protein timing matters. Makes science actually fun!</p>
                     </div>
                     <div class="coach-card">
                         <img src="assets/images/motivator.jpg" alt="The Motivator Coach" class="coach-image">
                         <h3>The Motivator</h3>
-                        <p>Your energetic cheerleader celebrating every win</p>
+                        <p>YASSS QUEEN/KING! This coach is your personal cheerleader, celebrating every single win (yes, even that salad for lunch counts)!</p>
                     </div>
                     <div class="coach-card">
                         <img src="assets/images/ally.jpg" alt="The Ally Coach" class="coach-image">
                         <h3>The Ally</h3>
-                        <p>Caring companion who walks beside you with empathy</p>
+                        <p>Your ride-or-die nutrition buddy! Always understanding, never judging, and ready with virtual hugs when you need them most.</p>
                     </div>
                     <div class="coach-card">
                         <img src="assets/images/leader.jpg" alt="The Leader Coach" class="coach-image">
                         <h3>The Leader</h3>
-                        <p>Strategic planner with bold vision and clear direction</p>
+                        <p>Think chess grandmaster meets Tony Robbins! Maps out your nutrition game plan with military precision and inspiring vision.</p>
                     </div>
                     <div class="coach-card">
                         <img src="assets/images/challenger.jpg" alt="The Challenger Coach" class="coach-image">
                         <h3>The Challenger</h3>
-                        <p>No-nonsense coach who pushes you past excuses</p>
+                        <p>Calls you out on your BS (lovingly)! "That wasn't a small portion..." Ready to push you past comfort zones to greatness!</p>
                     </div>
                 </div>
             </div>
@@ -142,9 +263,9 @@
 
         <section class="cta">
             <div class="container">
-                <h2 class="section-title">🎯 Start Your Journey Today</h2>
-                <p class="cta-text">Join thousands tracking their nutrition the smart way. No complex meal databases, no manual logging - just natural conversation with your AI coach.</p>
-                <a href="#" class="primary-button">Get Started →</a>
+                <h2 class="section-title">Ready to Feel Amazing?</h2>
+                <p class="cta-text">Join the nutrition revolution! Thousands are already living their best life with AI coaching that actually works. No more boring spreadsheets or confusing apps - just you, your AI coach, and epic results!</p>
+                <a href="#" class="primary-button">Get Started</a>
             </div>
         </section>
     </main>
