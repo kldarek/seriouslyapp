@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Terms of Service - Shake It Off  
+title: Terms of Service - Seriously  
 permalink: /terms
 ---
 
-# ShakeItOff — Terms of Service
+# Seriously — Terms of Service
 
 **Last updated:** August 9, 2025
 
-Welcome to ShakeItOff! These Terms govern your use of the App, which is built and maintained by a **private individual** (not a company). By downloading or using the App, you agree to these Terms and the Privacy Policy. If you don’t agree, do not use the App.
+Welcome to Seriously! These Terms govern your use of the App, which is built and maintained by a **private individual** (not a company). By downloading or using the App, you agree to these Terms and the Privacy Policy. If you don’t agree, do not use the App.
 
-> **No Medical Advice:** ShakeItOff provides **general wellness** information only. It does not diagnose, treat, or provide medical advice. Always consult a qualified professional for health decisions.
+> **No Medical Advice:** Seriously provides **general wellness** information only. It does not diagnose, treat, or provide medical advice. Always consult a qualified professional for health decisions.
 
 ---
 
@@ -22,7 +22,7 @@ You must be **16 years or older** to use the App. If you are a minor in your jur
 
 ## Description of the Service
 
-ShakeItOff offers AI‑assisted nutrition guidance, food/meal logging, calorie/macronutrient tracking, progress logs, and educational content. Nutritional databases and AI outputs can be incomplete or approximate. Use your own judgment and verify important information.
+Seriously offers AI‑assisted nutrition guidance, food/meal logging, calorie/macronutrient tracking, progress logs, and educational content. Nutritional databases and AI outputs can be incomplete or approximate. Use your own judgment and verify important information.
 
 The Service may change over time (features may be added, modified, or removed). The App is provided **“as is” and “as available.”** Availability and error‑free operation are **not** guaranteed. As a personal side project maintained by one individual, **support and updates are provided on a best‑effort basis** and may be delayed or unavailable.
 
@@ -30,13 +30,13 @@ The Service may change over time (features may be added, modified, or removed). 
 
 ## Availability & Support
 
-ShakeItOff is a personal side project run by one individual. I may modify, suspend, or discontinue all or part of the App **at any time without notice**. I do not promise any specific level of availability, response times, data retention, or support.
+Seriously is a personal side project run by one individual. I may modify, suspend, or discontinue all or part of the App **at any time without notice**. I do not promise any specific level of availability, response times, data retention, or support.
 
 ---
 
 ## Accounts & Security
 
-You may sign in via Apple or Google. Keep your credentials secure and your account information up to date. You’re responsible for activities under your account. If you suspect unauthorized access, contact **[shakeitoff.ai@gmail.com](mailto\:shakeitoff.ai@gmail.com)** immediately.
+You may sign in via Apple or Google. Keep your credentials secure and your account information up to date. You’re responsible for activities under your account. If you suspect unauthorized access, contact **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)** immediately.
 
 ---
 
@@ -71,7 +71,7 @@ Purchases use **Apple’s in‑app purchase** system. Apple bills your Apple ID;
 
 ## Termination
 
-You can stop using the App anytime. You may request account deletion via **[shakeitoff.ai@gmail.com](mailto\:shakeitoff.ai@gmail.com)** (or via any in‑app deletion feature). I may suspend or terminate access for violations, legal requirements, discontinuation, or long‑term inactivity. If terminated for breach, refunds may not be available.
+You can stop using the App anytime. You may request account deletion via **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)** (or via any in‑app deletion feature). I may suspend or terminate access for violations, legal requirements, discontinuation, or long‑term inactivity. If terminated for breach, refunds may not be available.
 
 ---
 
@@ -145,5 +145,5 @@ These Terms are governed by **Polish law** (subject to any mandatory EU consumer
 
 ## Contact
 
-All communications (support, privacy, legal): **[shakeitoff.ai@gmail.com](mailto\:shakeitoff.ai@gmail.com)**
+All communications (support, privacy, legal): **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)**
 

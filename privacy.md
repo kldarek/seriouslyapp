@@ -1,22 +1,22 @@
 ---
 layout: default
-title: Privacy Policy - Shake It Off
+title: Privacy Policy - Seriously
 permalink: /privacy
 ---
 
-# ShakeItOff — Privacy Policy
+# Seriously — Privacy Policy
 
 **Last updated:** August 9, 2025
 
-ShakeItOff (the “App”) is an iOS mobile app that provides AI‑powered diet coaching, calorie tracking, and nutrition tips. I respect your privacy and am committed to protecting your personal data. This Privacy Policy explains what information I collect, how it’s used and shared, and your rights.
+Seriously (the "App") is an iOS mobile app that provides AI‑powered diet coaching, calorie tracking, and nutrition tips. I respect your privacy and am committed to protecting your personal data. This Privacy Policy explains what information I collect, how it's used and shared, and your rights.
 
-> **Important:** ShakeItOff is a general wellness app. It does **not** provide medical or healthcare advice or treatment. See the **Health Disclaimer** in the Terms of Service.
+> **Important:** Seriously is a general wellness app. It does **not** provide medical or healthcare advice or treatment. See the **Health Disclaimer** in the Terms of Service.
 
 ---
 
 ## Data Controller and Contact
 
-The data controller is the **individual developer of ShakeItOff (EU‑based private person)**. For all privacy and support matters, contact: **[shakeitoff.ai@gmail.com](mailto\:shakeitoff.ai@gmail.com)**.
+The data controller is the **individual developer of Seriously (EU‑based private person)**. For all privacy and support matters, contact: **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)**.
 
 ---
 
@@ -86,7 +86,7 @@ I **do not** use third‑party data for advertising or profiling, and I avoid co
 
 ## Your Rights (GDPR)
 
-You can request **access, correction, deletion, restriction, portability,** and **objection** (including to marketing). You can withdraw consent at any time. To exercise rights, email **[shakeitoff.ai@gmail.com](mailto\:shakeitoff.ai@gmail.com)**. I may need to verify your identity. You also have the right to complain to your local data protection authority.
+You can request **access, correction, deletion, restriction, portability,** and **objection** (including to marketing). You can withdraw consent at any time. To exercise rights, email **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)**. I may need to verify your identity. You also have the right to complain to your local data protection authority.
 
 ---
 
@@ -122,4 +122,4 @@ I may update this Privacy Policy. Material changes will be notified in‑app or 
 
 ## Contact
 
-**Email:** **[shakeitoff.ai@gmail.com](mailto\:shakeitoff.ai@gmail.com)**
+**Email:** **[seriously.ai@gmail.com](mailto\:seriously.ai@gmail.com)**
