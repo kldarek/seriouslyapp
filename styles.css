@@ -493,8 +493,9 @@ main {
 
 .coach-image {
     width: 100%;
-    height: 200px;
+    height: 280px;
     object-fit: cover;
+    object-position: center 20%;
     border-radius: 10px;
     margin-bottom: 1rem;
     margin: -1.75rem -1.75rem 1rem -1.75rem;
@@ -546,6 +547,114 @@ footer {
     text-align: center;
 }
 
+/* Coach Profile Pages */
+.coach-profile {
+    padding: 120px 0 80px;
+    background: var(--surface);
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.profile-image {
+    position: sticky;
+    top: 120px;
+}
+
+.full-coach-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+}
+
+.full-coach-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
+.coach-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.coach-role {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.coach-tagline {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.coach-story {
+    margin-bottom: 3rem;
+}
+
+.coach-story h3,
+.coach-specialties h3 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.coach-story p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.coach-specialties ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coach-specialties li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-light);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.coach-specialties li::before {
+    content: '✨';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+
+.coach-specialties {
+    margin-bottom: 3rem;
+}
+
+/* Make coach cards clickable */
+.coach-card {
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.coach-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 @media (max-width: 768px) {
     .hero-content {
         grid-template-columns: 1fr;
@@ -584,5 +693,23 @@ footer {
     
     .coaches-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .profile-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .profile-image {
+        position: static;
+        text-align: center;
+    }
+    
+    .coach-name {
+        font-size: 2rem;
+    }
+    
+    .coach-role {
+        font-size: 1.2rem;
     }
 }
