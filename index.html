@@ -110,52 +110,36 @@
             if (waitlistForm) {
                 waitlistForm.addEventListener('submit', function(e) {
                     const submitButton = this.querySelector('.form-button');
-                    const originalText = submitButton.textContent;
                     
                     // Show loading state
                     submitButton.textContent = 'Joining...';
                     submitButton.disabled = true;
                     
-                    // Log form data for debugging
-                    const formData = new FormData(this);
-                    console.log('Form submission data:');
-                    for (let [key, value] of formData.entries()) {
-                        console.log(key + ': ' + value);
+                    // Store form reference for success handling
+                    const form = this;
+                    const successMessage = document.getElementById('successMessage');
+                    
+                    // Set a flag to track if we've already shown success
+                    if (!window.waitlistSubmitted) {
+                        window.waitlistSubmitted = true;
+                        
+                        // Show success message after form submits
+                        setTimeout(() => {
+                            form.style.display = 'none';
+                            successMessage.style.display = 'block';
+                        }, 2000);
                     }
                     
-                    // Create a hidden iframe to submit the form
-                    const iframe = document.createElement('iframe');
-                    iframe.style.display = 'none';
-                    iframe.name = 'hidden_iframe';
-                    document.body.appendChild(iframe);
-                    
-                    // Set form target to the iframe
-                    this.target = 'hidden_iframe';
-                    
-                    // Listen for iframe load to see if we get a response
-                    iframe.onload = function() {
-                        console.log('Form submitted to iframe');
-                        try {
-                            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-                            console.log('Response body:', iframeDoc.body.innerHTML);
-                        } catch(e) {
-                            console.log('Could not read iframe response (likely CORS)');
-                        }
-                    };
-                    
-                    // Show success after a brief delay
-                    setTimeout(() => {
-                        this.style.display = 'none';
-                        document.getElementById('successMessage').style.display = 'block';
-                    }, 3000);
-                    
-                    // Clean up iframe after form submission
-                    setTimeout(() => {
-                        if (document.body.contains(iframe)) {
-                            document.body.removeChild(iframe);
-                        }
-                    }, 10000);
+                    // Let the form submit normally - it will redirect then come back
                 });
+                
+                // Check URL params to see if we're returning from Maildroppa
+                const urlParams = new URLSearchParams(window.location.search);
+                if (urlParams.get('subscribed') === 'true' || window.location.hash.includes('success')) {
+                    // Hide form and show success if we're returning from successful subscription
+                    waitlistForm.style.display = 'none';
+                    document.getElementById('successMessage').style.display = 'block';
+                }
             }
         });
     </script>
@@ -345,25 +329,29 @@
                         
                         <form method="post" action="https://api.maildroppa.com/subscribe" class="waitlist-form" id="waitlistForm">
                             <div class="form-group">
-                                <label for="email" class="form-label">Email Address</label>
-                                <input type="email" 
-                                       id="email" 
-                                       name="fields[0].value" 
-                                       class="form-input" 
-                                       placeholder="Enter your email" 
-                                       tabIndex="1"
-                                       required>
-                                <input type="hidden" name="fields[0].name" value="email">
+                                <label class="form-label">
+                                    <div class="form-label-text">Email Address</div>
+                                    <div class="form-input-wrapper">
+                                        <input name="fields[0].value" 
+                                               class="form-input" 
+                                               placeholder="Enter your email" 
+                                               tabIndex="1" 
+                                               required 
+                                               type="email" />
+                                        <input value="email" name="fields[0].name" type="hidden" />
+                                    </div>
+                                </label>
+                                <div class="form-error" data-error-wrapper="error-email-152bbe87-ff4e-43af-877b-50832e65edd9" style="display: none;"></div>
                             </div>
                             
                             <!-- Honeypot field for spam protection -->
-                            <input type="text" name="url" id="url" style="position: absolute; opacity: 0; z-index: -1;" tabindex="-1">
+                            <input class="form-input" type="text" name="url" id="url" style="z-index: -1; position: absolute; opacity: 0;" tabindex="-1" />
                             
-                            <button type="submit" class="form-button">
-                                Count Me In! 🚀
-                            </button>
+                            <div class="form-button-wrapper">
+                                <button type="submit" class="form-button" data-id="submit-button">Count Me In! 🚀</button>
+                            </div>
                             
-                            <input type="hidden" name="form_id" value="152bbe87-ff4e-43af-877b-50832e65edd9">
+                            <input name="form_id" value="152bbe87-ff4e-43af-877b-50832e65edd9" type="hidden" />
                         </form>
                         
                         <div class="success-message" id="successMessage" style="display: none;">
