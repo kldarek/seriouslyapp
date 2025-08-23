@@ -1,0 +1,44 @@
+{
+  "kai": {
+    "name": "Kai",
+    "role": "The Guide",
+    "url": "/coaches/guide.html",
+    "image": "/assets/images/guide.jpg",
+    "bio": "Your zen AI nutrition guide who helps you discover your own path to wellness through mindful eating and ancient wisdom combined with modern insights."
+  },
+  "maya": {
+    "name": "Dr. Maya", 
+    "role": "The Mentor",
+    "url": "/coaches/mentor.html",
+    "image": "/assets/images/mentor.jpg",
+    "bio": "Your friendly neighborhood nutrition scientist who loves debunking myths and making complex nutritional science easy to understand and apply."
+  },
+  "zara": {
+    "name": "Zara",
+    "role": "The Motivator", 
+    "url": "/coaches/motivator.html",
+    "image": "/assets/images/motivator.jpg",
+    "bio": "Your energetic personal cheerleader who celebrates every victory, no matter how small, and keeps you motivated on your wellness journey."
+  },
+  "sam": {
+    "name": "Sam",
+    "role": "The Ally",
+    "url": "/coaches/ally.html", 
+    "image": "/assets/images/ally.jpg",
+    "bio": "Your compassionate nutrition buddy who creates a judgment-free space for honest conversations about your challenges and victories."
+  },
+  "alex": {
+    "name": "Commander Alex",
+    "role": "The Leader",
+    "url": "/coaches/leader.html",
+    "image": "/assets/images/leader.jpg", 
+    "bio": "Your strategic nutrition planner who maps out detailed action plans and helps you think systematically about your health goals."
+  },
+  "phoenix": {
+    "name": "Coach Phoenix",
+    "role": "The Challenger",
+    "url": "/coaches/challenger.html",
+    "image": "/assets/images/challenger.jpg",
+    "bio": "Your loving but firm accountability partner who challenges you to break through comfort zones and face the truth about your habits."
+  }
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required basics -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{POST_TITLE}} | Seriously AI Nutrition Blog</title>
+  <meta name="description" content="{{META_DESCRIPTION_150_160_CHARS}}" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="{{ABSOLUTE_POST_URL}}" />
+
+  <!-- Performance nudges -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Icons & theming -->
+  <link rel="icon" href="{{ABSOLUTE_FAVICON_URL}}" />
+  <meta name="theme-color" content="#007AFF" />
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{POST_TITLE}}" />
+  <meta property="og:description" content="{{META_DESCRIPTION_150_160_CHARS}}" />
+  <meta property="og:url" content="{{ABSOLUTE_POST_URL}}" />
+  <meta property="og:site_name" content="Seriously AI Nutrition Blog" />
+  <meta property="og:image" content="{{ABSOLUTE_HERO_IMAGE_URL}}" />
+  <meta property="og:image:alt" content="{{HERO_IMAGE_ALT}}" />
+  <meta property="og:image:width" content="{{IMG_WIDTH}}" />
+  <meta property="og:image:height" content="{{IMG_HEIGHT}}" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{POST_TITLE}}" />
+  <meta name="twitter:description" content="{{META_DESCRIPTION_150_160_CHARS}}" />
+  <meta name="twitter:image" content="{{ABSOLUTE_HERO_IMAGE_URL}}" />
+
+  <!-- Structured Data: BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ABSOLUTE_POST_URL}}"
+    },
+    "headline": "{{POST_TITLE}}",
+    "description": "{{META_DESCRIPTION_150_160_CHARS}}",
+    "image": ["{{ABSOLUTE_HERO_IMAGE_URL}}"],
+    "datePublished": "{{DATE_PUBLISHED_ISO}}",
+    "dateModified": "{{DATE_MODIFIED_ISO}}",
+    "author": {
+      "@type": "Person",
+      "name": "{{AUTHOR_NAME}}",
+      "url": "{{AUTHOR_URL}}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Seriously AI Nutrition",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ABSOLUTE_LOGO_URL}}"
+      }
+    },
+    "url": "{{ABSOLUTE_POST_URL}}",
+    "keywords": "{{CSV_KEYWORDS}}",
+    "wordCount": {{WORD_COUNT_INT}}
+  }
+  </script>
+
+  <!-- Structured Data: Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ABSOLUTE_HOME_URL}}" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "{{ABSOLUTE_BLOG_INDEX_URL}}" },
+      { "@type": "ListItem", "position": 3, "name": "{{POST_TITLE}}", "item": "{{ABSOLUTE_POST_URL}}" }
+    ]
+  }
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{RELATIVE_MAIN_STYLES_URL}}" />
+  <link rel="stylesheet" href="{{RELATIVE_BLOG_STYLES_URL}}" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo-wrapper">
+            <a href="{{ABSOLUTE_HOME_URL}}" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+              <img src="{{RELATIVE_LOGO_ICON_URL}}" alt="Seriously Logo" class="logo-icon">
+              <h1 class="logo">Seriously</h1>
+            </a>
+          </div>
+          <div class="nav-links">
+            <a href="{{ABSOLUTE_BLOG_INDEX_URL}}" class="nav-link">Blog</a>
+            <a href="{{ABSOLUTE_HOME_URL}}#coaches" class="cta-button">AI Coaches</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="blog-post-main">
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <div class="container">
+        <a href="{{ABSOLUTE_HOME_URL}}">Home</a> ›
+        <a href="{{ABSOLUTE_BLOG_INDEX_URL}}">Blog</a> ›
+        <span aria-current="page">{{POST_TITLE}}</span>
+      </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+      <div class="container">
+        <h1 class="article-title">{{POST_TITLE}}</h1>
+        <div class="article-meta">
+          <div class="author-info">
+            <img src="{{AUTHOR_IMAGE_URL}}" alt="{{AUTHOR_NAME}}" class="author-avatar">
+            <div class="author-details">
+              <span class="author-name">Written by <a href="{{AUTHOR_URL}}">{{AUTHOR_NAME}}</a></span>
+              <span class="author-role">{{AUTHOR_ROLE}} • AI Nutrition Coach</span>
+            </div>
+          </div>
+          <div class="post-meta">
+            <time datetime="{{DATE_PUBLISHED_ISO}}">{{HUMAN_READABLE_DATE}}</time>
+            <span class="reading-time">{{READING_TIME_MINUTES}} min read</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <section class="hero-image-section">
+      <div class="container">
+        <figure class="hero-figure">
+          <img
+            src="{{HERO_IMAGE_SRC}}"
+            srcset="{{HERO_IMAGE_640}} 640w, {{HERO_IMAGE_1024}} 1024w, {{HERO_IMAGE_1600}} 1600w"
+            sizes="(max-width: 800px) 100vw, 800px"
+            width="{{IMG_WIDTH}}" height="{{IMG_HEIGHT}}"
+            alt="{{HERO_IMAGE_ALT}}"
+            loading="eager" fetchpriority="high" />
+          <figcaption>{{HERO_IMAGE_CAPTION}}</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="article-content">
+      <div class="container">
+        <!-- Content goes here - replace with actual article content -->
+        {{ARTICLE_CONTENT}}
+      </div>
+    </article>
+
+    <!-- Post Footer -->
+    <footer class="article-footer">
+      <div class="container">
+        <div class="article-tags">
+          <h3>Topics covered:</h3>
+          <div class="tags-list">
+            {{TAGS_HTML}}
+          </div>
+        </div>
+        
+        <div class="author-bio">
+          <img src="{{AUTHOR_IMAGE_URL}}" alt="{{AUTHOR_NAME}}" class="bio-avatar">
+          <div class="bio-content">
+            <h3><a href="{{AUTHOR_URL}}">{{AUTHOR_NAME}} - {{AUTHOR_ROLE}}</a></h3>
+            <p>{{AUTHOR_BIO}}</p>
+          </div>
+        </div>
+
+        <div class="article-updated">
+          <p>Last updated <time datetime="{{DATE_MODIFIED_ISO}}">{{HUMAN_READABLE_MOD_DATE}}</time></p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{COPYRIGHT_YEAR}} Seriously AI Nutrition. All rights reserved. | <a href="{{PRIVACY_URL}}" style="color: inherit;">Privacy Policy</a> | <a href="{{TERMS_URL}}" style="color: inherit;">Terms of Service</a></p>
+    </div>
+  </footer>
+</body>
+</html>
