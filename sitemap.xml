@@ -73,6 +73,12 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Blog Posts will be added here as we create them -->
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://seriouslyapp.com/blog/posts/simple-math-weight-loss/</loc>
+    <lastmod>2025-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
 </urlset>
