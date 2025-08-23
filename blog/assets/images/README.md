@@ -1,24 +1,27 @@
-# Blog Images Required
+# Blog Images Required - SPECIFIC URLS FOUND
 
 ## For "The Simple Math Behind Every Weight Loss Success Story" Post
 
 ### Hero Image: `simple-math-weight-loss-hero.jpg`
-**Specifications:** 1200x630px (for social sharing), optimized versions at 640w, 1024w, 1600w
-**Source:** Unsplash or Pexels
-**Search terms:** "healthy meal planning calculator nutrition" or "diet food with calculator"
+**Direct Download URL:** https://unsplash.com/photos/IGfIGP5ONV0/download  
+**Photographer:** Anna Pelzer (Unsplash)
+**Description:** Fresh vegetable salad - perfect for healthy eating/weight loss content
 **Alt text:** "Healthy meal planning with calculator showing caloric deficit concept for sustainable weight loss"
+**Specifications:** Resize to 1200x630px for social sharing, create responsive versions
 
-### Inline Image 1: `sustainable-weight-loss-chart.jpg`
+### Inline Image 1: `sustainable-weight-loss-tracking.jpg`
+**Direct Download URL:** https://unsplash.com/photos/5jctAMjz21A/download
+**Photographer:** i yunmai (Unsplash)  
+**Description:** Person standing on digital scale - perfect for weight loss tracking
+**Alt text:** "Digital scale showing weight loss progress through sustainable caloric deficit approach"
 **Specifications:** 600x400px
-**Source:** Create a simple chart or infographic, or find from Pixabay
-**Search terms:** "weight loss chart comparison" or "diet success graph"
-**Alt text:** "Chart comparing sustainable vs extreme weight loss approaches showing better long-term results with moderate deficits"
 
-### Inline Image 2: `tdee-breakdown-chart.jpg`
+### Inline Image 2: `healthy-meal-portion.jpg`
+**Direct Download URL:** https://unsplash.com/photos/kcA-c3f_3FE/download
+**Photographer:** Anh Nguyen (Unsplash)
+**Description:** Healthy vegetable and meat bowl showing proper portions
+**Alt text:** "Balanced meal showing proper portion control for caloric deficit weight loss"
 **Specifications:** 500x350px
-**Source:** Create an infographic showing TDEE components or find from Unsplash
-**Search terms:** "metabolism breakdown chart" or "calorie expenditure diagram"
-**Alt text:** "Visual breakdown of Total Daily Energy Expenditure components for weight loss planning"
 
 ## Image Sourcing Guidelines
 
