@@ -116,6 +116,13 @@
                     submitButton.textContent = 'Joining...';
                     submitButton.disabled = true;
                     
+                    // Log form data for debugging
+                    const formData = new FormData(this);
+                    console.log('Form submission data:');
+                    for (let [key, value] of formData.entries()) {
+                        console.log(key + ': ' + value);
+                    }
+                    
                     // Create a hidden iframe to submit the form
                     const iframe = document.createElement('iframe');
                     iframe.style.display = 'none';
@@ -125,16 +132,29 @@
                     // Set form target to the iframe
                     this.target = 'hidden_iframe';
                     
-                    // Show success after a brief delay (since we can't track the actual response)
+                    // Listen for iframe load to see if we get a response
+                    iframe.onload = function() {
+                        console.log('Form submitted to iframe');
+                        try {
+                            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                            console.log('Response body:', iframeDoc.body.innerHTML);
+                        } catch(e) {
+                            console.log('Could not read iframe response (likely CORS)');
+                        }
+                    };
+                    
+                    // Show success after a brief delay
                     setTimeout(() => {
                         this.style.display = 'none';
                         document.getElementById('successMessage').style.display = 'block';
-                    }, 2000);
+                    }, 3000);
                     
                     // Clean up iframe after form submission
                     setTimeout(() => {
-                        document.body.removeChild(iframe);
-                    }, 5000);
+                        if (document.body.contains(iframe)) {
+                            document.body.removeChild(iframe);
+                        }
+                    }, 10000);
                 });
             }
         });
@@ -331,6 +351,7 @@
                                        name="fields[0].value" 
                                        class="form-input" 
                                        placeholder="Enter your email" 
+                                       tabIndex="1"
                                        required>
                                 <input type="hidden" name="fields[0].name" value="email">
                             </div>
