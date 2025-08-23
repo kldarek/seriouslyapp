@@ -109,9 +109,6 @@
             const waitlistForm = document.getElementById('waitlistForm');
             if (waitlistForm) {
                 waitlistForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    const formData = new FormData(this);
                     const submitButton = this.querySelector('.form-button');
                     const originalText = submitButton.textContent;
                     
@@ -119,27 +116,25 @@
                     submitButton.textContent = 'Joining...';
                     submitButton.disabled = true;
                     
-                    // Submit to Maildroppa
-                    fetch('https://api.maildroppa.com/subscribe', {
-                        method: 'POST',
-                        body: formData
-                    })
-                    .then(response => {
-                        if (response.ok) {
-                            // Hide form and show success message
-                            this.style.display = 'none';
-                            document.getElementById('successMessage').style.display = 'block';
-                        } else {
-                            throw new Error('Submission failed');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                        // Reset button on error
-                        submitButton.textContent = originalText;
-                        submitButton.disabled = false;
-                        alert('Something went wrong. Please try again.');
-                    });
+                    // Create a hidden iframe to submit the form
+                    const iframe = document.createElement('iframe');
+                    iframe.style.display = 'none';
+                    iframe.name = 'hidden_iframe';
+                    document.body.appendChild(iframe);
+                    
+                    // Set form target to the iframe
+                    this.target = 'hidden_iframe';
+                    
+                    // Show success after a brief delay (since we can't track the actual response)
+                    setTimeout(() => {
+                        this.style.display = 'none';
+                        document.getElementById('successMessage').style.display = 'block';
+                    }, 2000);
+                    
+                    // Clean up iframe after form submission
+                    setTimeout(() => {
+                        document.body.removeChild(iframe);
+                    }, 5000);
                 });
             }
         });
