@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the iOS Beta on TestFlight - Seriously</title>
+    <meta name="description" content="Get early access to Seriously's AI nutrition coaching beta. Install via TestFlight and help shape the future of personalized nutrition.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics 4 - Replace [GA4_TRACKING_ID] with your actual tracking ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=[GA4_TRACKING_ID]"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '[GA4_TRACKING_ID]');
+        
+        // Track TestFlight button clicks
+        function trackTestFlightClick(source) {
+            gtag('event', 'testflight_click', {
+                'event_category': 'engagement',
+                'event_label': source,
+                'value': 1
+            });
+        }
+    </script>
+    
+    <style>
+        /* Remove mobile sticky CTA - not needed */
+        
+        .testflight-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: 1.25rem 2.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            transition: all 0.4s ease;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 8px 25px rgba(102, 126, 234, 0.4),
+                0 4px 12px rgba(0, 0, 0, 0.15);
+            text-transform: none;
+            letter-spacing: 0.01em;
+        }
+        
+        .testflight-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .testflight-button:hover::before {
+            left: 100%;
+        }
+        
+        .testflight-button:hover {
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 
+                0 15px 40px rgba(102, 126, 234, 0.6),
+                0 8px 20px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #5a6fd8 0%, #6b4190 100%);
+        }
+        
+        .testflight-button:active {
+            transform: translateY(-2px) scale(1.02);
+        }
+        
+        .beta-icon {
+            width: 24px;
+            height: 24px;
+            filter: brightness(1.2) saturate(1.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .testflight-button:hover .beta-icon {
+            transform: rotate(15deg) scale(1.1);
+        }
+        
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem !important;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem !important;
+            }
+            
+            .testflight-button {
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                letter-spacing: 0.3px;
+            }
+        }
+        
+        .beta-how-it-works {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .beta-steps {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .beta-steps::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 15%;
+            right: 15%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            z-index: 1;
+        }
+        
+        .beta-step {
+            text-align: center;
+            flex: 1;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .beta-step h3 {
+            margin-top: 1rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .beta-step-icon {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border: 3px solid var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .beta-step-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
+        }
+        
+        /* Simple, reliable CSS-based icons */
+        .icon-testflight::before {
+            content: '📱';
+            font-size: 36px;
+            display: block;
+            line-height: 1;
+        }
+        
+        .icon-accept::before {
+            content: '✓';
+            font-size: 36px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+            line-height: 1;
+        }
+        
+        .icon-rocket::before {
+            content: '🚀';
+            font-size: 36px;
+            display: block;
+            line-height: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .beta-steps {
+                flex-direction: column;
+                gap: 3rem;
+            }
+            
+            .beta-steps::before {
+                display: none;
+            }
+            
+            /* Mobile stacked layout for features */
+            .features-scroll-container {
+                overflow-x: visible !important;
+            }
+            
+            .feature-showcase-grid {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 3rem !important;
+                min-width: auto !important;
+                align-items: center;
+            }
+            
+            .showcase-item {
+                flex: none !important;
+                max-width: 320px !important;
+            }
+            
+            .features-scroll-container + p {
+                display: none !important;
+            }
+        }
+        
+        .beta-value-props {
+            padding: 80px 0;
+            background: var(--surface);
+        }
+        
+        .beta-props-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .beta-faq {
+            padding: 80px 0;
+            background: white;
+        }
+        
+        .faq-grid {
+            display: grid;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: var(--surface);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+        
+        .faq-question {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .faq-answer {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .compliance-note {
+            background: var(--surface);
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo-wrapper">
+                        <img src="assets/images/icon_small.png" alt="Seriously Logo" class="logo-icon">
+                        <h1 class="logo">Seriously</h1>
+                    </div>
+                    <a href="https://testflight.apple.com/join/R3bJv7Zh" 
+                       class="testflight-button"
+                       onclick="trackTestFlightClick('header')"
+                       target="_blank"
+                       rel="noopener"
+                       style="font-size: 1rem; padding: 0.75rem 1.5rem;">
+                        Join Beta
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Phone Mockup -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h2 class="hero-title">Lose Fat and Gain Muscle Now</h2>
+                        <p class="hero-subtitle">Free beta access to science-backed nutrition AI coach</p>
+                        <div class="hero-cta">
+                            <a href="https://testflight.apple.com/join/R3bJv7Zh" 
+                               class="testflight-button"
+                               onclick="trackTestFlightClick('hero')"
+                               target="_blank"
+                               rel="noopener">
+                                <img src="assets/images/icon_small.png" alt="Seriously" class="beta-icon">
+                                Join Beta
+                            </a>
+                        </div>
+                        
+                        <!-- Credibility & Value Proposition -->
+                        <div style="max-width: 500px; margin: 3rem auto 0; text-align: left;">
+                            <p style="color: #374151; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem; font-weight: 500; letter-spacing: 0.01em;">
+                                Seriously is an app based on the latest AI and nutrition science. We believe technology should help people achieve their goals, help them be healthier and feel better, and we're building an app to put this into practice.
+                            </p>
+                            <div style="background: linear-gradient(135deg, #F8FAFF 0%, #E6F3FF 100%); padding: 1.75rem; border-radius: 16px; border-left: 4px solid var(--primary-color);">
+                                <p style="color: var(--text-dark); font-size: 1.1rem; font-weight: 600; line-height: 1.6; margin: 0; letter-spacing: -0.01em;">
+                                    For a limited time, we're offering <span style="color: var(--primary-color); font-weight: 700; background: linear-gradient(135deg, #007AFF, #5856D6); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">free access</span> in exchange for beta testing the app - you'll save hundreds of dollars by joining now.
+                                </p>
+                                <p style="color: var(--accent-color); font-size: 1rem; font-weight: 700; margin-top: 0.75rem; margin-bottom: 0; text-transform: uppercase; letter-spacing: 0.5px;">
+                                    Limited number of places available!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/images/screen1-left.png" alt="Seriously app showing AI nutrition tracking" class="app-mockup">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features Showcase -->
+        <section class="beta-features-showcase" style="padding: 80px 0; background: white;">
+            <div class="container">
+                <h2 class="section-title">See What Makes Seriously Different</h2>
+                
+                <div class="features-scroll-container" style="overflow-x: auto; padding: 2rem 0; scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+                    <div class="feature-showcase-grid" style="display: flex; gap: 2rem; min-width: max-content; padding-bottom: 1rem;">
+                        
+                        <!-- Feature 1: Body Transformation -->
+                        <div class="showcase-item" style="text-align: center; flex: 0 0 280px;">
+                            <img src="assets/images/1.jpg" alt="Lose Fat and Gain Muscle" style="width: 280px; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--text-dark);">Body Recomposition</h3>
+                            <p style="color: var(--text-light); line-height: 1.6; max-width: 260px;">Lose fat and gain muscle with AI coaching tailored to your goals.</p>
+                        </div>
+
+                        <!-- Feature 2: 3-Second Tracking -->
+                        <div class="showcase-item" style="text-align: center; flex: 0 0 280px;">
+                            <img src="assets/images/2.jpg" alt="3 Second Meal Tracking" style="width: 280px; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--text-dark);">3-Second Tracking</h3>
+                            <p style="color: var(--text-light); line-height: 1.6; max-width: 260px;">Photo, voice, or text - fastest meal logging ever created.</p>
+                        </div>
+
+                        <!-- Feature 3: Instant Feedback -->
+                        <div class="showcase-item" style="text-align: center; flex: 0 0 280px;">
+                            <img src="assets/images/3.jpg" alt="Instant Feedback" style="width: 280px; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--text-dark);">Instant AI Coaching</h3>
+                            <p style="color: var(--text-light); line-height: 1.6; max-width: 260px;">Get real-time feedback and progress tracking from your AI coach.</p>
+                        </div>
+
+                        <!-- Feature 4: Science-Based Reports -->
+                        <div class="showcase-item" style="text-align: center; flex: 0 0 280px;">
+                            <img src="assets/images/4.jpg" alt="Science-Based Recommendations" style="width: 280px; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--text-dark);">Science-Based Reports</h3>
+                            <p style="color: var(--text-light); line-height: 1.6; max-width: 260px;">Personalized nutrition insights backed by research and data.</p>
+                        </div>
+
+                        <!-- Feature 5: Achieve Goals -->
+                        <div class="showcase-item" style="text-align: center; flex: 0 0 280px;">
+                            <img src="assets/images/5.jpg" alt="Achieve Your Goals" style="width: 280px; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--text-dark);">Weekly Progress</h3>
+                            <p style="color: var(--text-light); line-height: 1.6; max-width: 260px;">Track your progress with beautiful charts and actionable insights.</p>
+                        </div>
+
+                        <!-- Feature 6: Personalized Approach -->
+                        <div class="showcase-item" style="text-align: center; flex: 0 0 280px;">
+                            <img src="assets/images/6.jpg" alt="Personalized Coaching Style" style="width: 280px; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--text-dark);">6 Coaching Styles</h3>
+                            <p style="color: var(--text-light); line-height: 1.6; max-width: 260px;">Choose your perfect AI coach - from supportive to challenging.</p>
+                        </div>
+
+                        <!-- Feature 7: Goal Achievement -->
+                        <div class="showcase-item" style="text-align: center; flex: 0 0 280px;">
+                            <img src="assets/images/7.jpg" alt="Goal Achievement" style="width: 280px; height: auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--text-dark);">Real Results</h3>
+                            <p style="color: var(--text-light); line-height: 1.6; max-width: 260px;">Feel better, look better, and be healthier with proven methods.</p>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Scroll hint for desktop -->
+                <p style="text-align: center; color: var(--text-light); font-size: 0.9rem; margin-top: 1rem;">← Scroll to see all features →</p>
+            </div>
+        </section>
+
+        <!-- Beta Tester Review -->
+        <section style="padding: 80px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; position: relative;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 60%); pointer-events: none;"></div>
+            <div class="container" style="position: relative; z-index: 2;">
+                <h2 class="section-title" style="color: white; margin-bottom: 3rem;">What Our Beta Testers Say</h2>
+                
+                <!-- Testimonial Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+                    
+                    <!-- Review 1 -->
+                    <div style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(20px); padding: 2.5rem; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.2); position: relative;">
+                        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: white; padding: 0.75rem; border-radius: 50%; box-shadow: 0 6px 25px rgba(0,0,0,0.15);">
+                            <img src="assets/images/favicon.png" alt="Seriously" style="width: 36px; height: 36px;">
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 1.5rem;">
+                            <div style="font-size: 3rem; color: rgba(255,255,255,0.3); line-height: 1; margin-bottom: 1rem;">"</div>
+                            <blockquote style="margin: 0; font-size: 1.1rem; line-height: 1.6; color: white; font-weight: 400; font-style: normal;">
+                                I've been using Seriously for the last 5 weeks, lost 5 pounds while improving my strength and building muscle. The AI coach is super helpful and actually motivates me to eat healthier. The biggest value is the weekly analysis though, it indicated nutrients I've been missing and helped me change a few bad habits.
+                            </blockquote>
+                            <div style="font-size: 3rem; color: rgba(255,255,255,0.3); line-height: 1; margin-top: 1rem; transform: rotate(180deg);">"</div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                            <div style="display: flex; gap: 2px; justify-content: center; margin-bottom: 0.5rem;">
+                                <span style="color: #FFD700; font-size: 1rem;">★★★★★</span>
+                            </div>
+                            <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem; font-weight: 500;">Beta Tester</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Review 2 -->
+                    <div style="background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(20px); padding: 2.5rem; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.2); position: relative;">
+                        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: white; padding: 0.75rem; border-radius: 50%; box-shadow: 0 6px 25px rgba(0,0,0,0.15);">
+                            <img src="assets/images/favicon.png" alt="Seriously" style="width: 36px; height: 36px;">
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 1.5rem;">
+                            <div style="font-size: 3rem; color: rgba(255,255,255,0.3); line-height: 1; margin-bottom: 1rem;">"</div>
+                            <blockquote style="margin: 0; font-size: 1.1rem; line-height: 1.6; color: white; font-weight: 400; font-style: normal;">
+                                I really enjoy the app. I'm actually looking to get more fit while maintaining weight, and the AI coach helps me be more aware of what and how much I'm eating. The total calories and macros help me better plan my diet and it also helps me better manage my cravings.
+                            </blockquote>
+                            <div style="font-size: 3rem; color: rgba(255,255,255,0.3); line-height: 1; margin-top: 1rem; transform: rotate(180deg);">"</div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                            <div style="display: flex; gap: 2px; justify-content: center; margin-bottom: 0.5rem;">
+                                <span style="color: #FFD700; font-size: 1rem;">★★★★★</span>
+                            </div>
+                            <span style="color: rgba(255,255,255,0.8); font-size: 0.9rem; font-weight: 500;">Beta Tester</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- How TestFlight Works -->
+        <section class="beta-how-it-works">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="beta-steps">
+                    <div class="beta-step">
+                        <div class="beta-step-icon icon-testflight"></div>
+                        <h3>Install TestFlight</h3>
+                        <p>Download Apple's official TestFlight app from the App Store</p>
+                    </div>
+                    <div class="beta-step">
+                        <div class="beta-step-icon icon-accept"></div>
+                        <h3>Tap "Accept"</h3>
+                        <p>Follow our invite link and accept the beta invitation</p>
+                    </div>
+                    <div class="beta-step">
+                        <div class="beta-step-icon icon-rocket"></div>
+                        <h3>Install Seriously</h3>
+                        <p>Download the beta and start your AI nutrition journey</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Beta FAQ -->
+        <section class="beta-faq">
+            <div class="container">
+                <h2 class="section-title">Beta FAQ</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">What's TestFlight?</h3>
+                        <p class="faq-answer">Apple's official beta testing system. You install their TestFlight app, then use it to install our beta version.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">How long does access last?</h3>
+                        <p class="faq-answer">Each build is available up to 90 days. We'll ship regular updates during the beta period with new features and improvements.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Any cost?</h3>
+                        <p class="faq-answer">Completely free during the beta period.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">iOS only?</h3>
+                        <p class="faq-answer">Yes, the beta is currently iOS only. Android support is planned for the future.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="cta">
+            <div class="container">
+                <h2 class="section-title">Exclusive Free Access for 100 Beta Testers</h2>
+                <p class="cta-text">Limited beta spots available. Be part of the nutrition revolution that's changing how people achieve their health goals.</p>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; margin-bottom: 2rem;">
+                    <img src="assets/images/1.jpg" alt="Success story" style="width: 80px; height: 140px; border-radius: 12px; opacity: 0.8;">
+                    <img src="assets/images/7.jpg" alt="Success story" style="width: 80px; height: 140px; border-radius: 12px; opacity: 0.8;">
+                </div>
+                <a href="https://testflight.apple.com/join/R3bJv7Zh" 
+                   class="testflight-button"
+                   onclick="trackTestFlightClick('bottom_cta')"
+                   target="_blank"
+                   rel="noopener"
+                   style="animation: pulse 2s ease-in-out infinite;">
+                    <img src="assets/images/icon_small.png" alt="Seriously" class="beta-icon">
+                    Claim Your Beta Spot
+                </a>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-top: 1rem;">⚡ Instant access via TestFlight</p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Compliance Footer -->
+    <div class="compliance-note">
+        <p>Seriously provides general wellness coaching and is not medical advice.</p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Seriously. All rights reserved. | <a href="/privacy" style="color: inherit;">Privacy Policy</a> | <a href="/terms" style="color: inherit;">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add the same scroll animations from main page
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for scroll animations
+            document.querySelectorAll('.feature-card, .beta-step, .faq-item').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+
+        });
+    </script>
+</body>
+</html>
