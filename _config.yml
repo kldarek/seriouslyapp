@@ -9,6 +9,7 @@ markdown: kramdown
 include:
   - privacy.md
   - terms.md
+  - beta.html
 
 # Plugins
 plugins:
