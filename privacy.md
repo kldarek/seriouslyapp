@@ -26,7 +26,11 @@ The data controller is the **individual developer of Seriously (EU‑based priva
 - **Profile & Wellness Data.** Age, weight, height, dietary preferences or restrictions, calorie targets, and similar wellness details you choose to enter. Some entries may be considered **health‑related data**; they’re processed only with your explicit consent, which you give when entering them in the App.
 - **AI Chat Inputs.** The questions and messages you submit to the AI coach. Avoid sharing highly sensitive data.
 - **App & Device Data.** Logs about feature usage and basic device data (model, OS version, app version, and identifiers needed for functionality/troubleshooting).
-- **Subscription Data (if applicable).** If you subscribe to Premium features, I receive confirmation of your purchase, plan, and renewal status via Apple’s in‑app purchase system with the help of RevenueCat. I do **not** receive or store payment card details.
+- **Subscription & Payment Data.** If you subscribe to Premium features:
+  - **Purchase Information:** I receive confirmation of your purchase, subscription plan, renewal status, and purchase date via Apple's in-app purchase system through RevenueCat
+  - **Transaction Records:** Apple transaction IDs, receipt data, and subscription status for verification and customer support
+  - **Billing Information:** I do **not** receive, process, or store payment card details, billing addresses, or financial information - all payment processing is handled securely by Apple
+  - **Purchase History:** Records of subscription start dates, renewals, cancellations, and refunds for customer support and legal compliance
 
 I collect **only what’s needed** to provide and improve the App.
 
@@ -37,7 +41,7 @@ I collect **only what’s needed** to provide and improve the App.
 - **Provide & Personalize the Service.** Use profile/goals/chat inputs to tailor coaching and tracking features.
 - **AI‑Powered Responses.** Your chat inputs are sent securely to AI providers **(OpenAI and/or Google)** to generate responses.
 - **Account & Support.** Authenticate your login (Apple/Google), send critical service updates, and respond to support.
-- **Subscription Management (if used).** Verify subscription status (via RevenueCat) and unlock Premium features.
+- **Subscription & Payment Processing.** Verify subscription status, process renewals, handle subscription changes, manage access to Premium features, and maintain transaction records for customer support and legal compliance (via RevenueCat and Apple's systems).
 - **Improve & Secure the App.** Analyze aggregated usage (de‑identified where possible), fix bugs, and prevent abuse or fraud.
 - **Legal Compliance.** Comply with lawful requests and tax/transaction record‑keeping where applicable.
 
@@ -59,7 +63,7 @@ I will not use your data for purposes that are incompatible with the above witho
 To power features, I use a small number of service providers acting on my instructions as **processors**. I share only what’s necessary to provide the App, I do **not** sell your data, and I do **not** use advertising/behavioral tracking SDKs.
 
 - **AI providers (e.g., OpenAI, Google).** Your prompts (and minimal context) are sent to generate a reply. I do not include your direct contact details in prompts. Processing is subject to each provider’s terms; I do not control their systems.
-- **RevenueCat (subscriptions, if used).** Processes purchase receipts from Apple to determine subscription status. I do not receive your payment card details.
+- **RevenueCat (subscription management).** Processes Apple purchase receipts, manages subscription status verification, handles subscription analytics, and facilitates customer support for billing issues. I do not receive your payment card details through this service.
 - **Apple / Google (auth & app stores).** Governed by their terms when you sign in or purchase.
 
 Data may be processed in or transferred to countries outside the EU. Where this happens, I rely on appropriate safeguards and protect data in transit and at rest.
@@ -80,7 +84,7 @@ I **do not** use third‑party data for advertising or profiling, and I avoid co
 
 - **Account data** is kept while your account is active. Upon deletion or prolonged inactivity, it’s deleted or anonymized (subject to brief backup retention).
 - **Wellness entries & chat logs.** Kept so the App works (e.g., showing your history) and deleted on account deletion or upon your request. Not used for third‑party advertising.
-- **Subscription records** are kept while needed for service and legal obligations.
+- **Subscription & transaction records** are kept for as long as your subscription is active, plus additional time as required for customer support, dispute resolution, tax compliance, and legal obligations (typically 7 years for financial records). Apple retains its own transaction records per their policies.
 
 ---
 

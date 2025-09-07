@@ -63,9 +63,40 @@ I do **not** undertake to monitor user content, but I may remove content or susp
 
 ---
 
-## Subscriptions & Purchases (if offered)
+## Subscriptions & Purchases
 
-Purchases use **Apple’s in‑app purchase** system. Apple bills your Apple ID; manage/cancel in your Apple ID settings. I don’t see your card details. RevenueCat helps verify subscription status. Trials, renewals, price changes, and refunds are handled per Apple policies. If payment fails, access to Premium may be suspended.
+### Auto-Renewable Subscriptions
+
+Seriously offers premium features through auto-renewable subscriptions purchased via Apple's in-app purchase system. By subscribing, you agree to the following terms:
+
+**Billing & Auto-Renewal:**
+- Payment will be charged to your Apple ID account at the confirmation of purchase
+- Subscriptions automatically renew unless auto-renew is turned off at least 24 hours before the end of the current period
+- Your account will be charged for renewal within 24 hours prior to the end of the current period
+- The cost of renewal will be the same price you initially paid for the subscription unless price changes are communicated in advance
+
+**Managing Subscriptions:**
+- You can manage and cancel your subscriptions by going to your Apple ID account settings after purchase
+- Auto-renewal may be turned off by going to your Apple ID Account Settings after purchase
+- No cancellation of the current subscription is allowed during the active subscription period
+
+**Free Trials:**
+- Free trials, if offered, allow you to experience premium features at no cost for a specified period
+- Any unused portion of a free trial period will be forfeited when you purchase a subscription
+- At the end of the free trial, your subscription will automatically begin and you will be charged the subscription price
+
+**Refunds:**
+- Refund requests must be submitted directly to Apple through the App Store
+- I do not process refunds directly as all billing is handled through Apple's systems
+- Refunds are subject to Apple's terms and conditions
+
+**Subscription Verification:**
+- RevenueCat is used to verify subscription status and unlock premium features
+- I do not receive or store your payment card details - all payment processing is handled by Apple
+
+**Access & Service Suspension:**
+- If payment fails or subscription expires, access to premium features may be suspended immediately
+- Your subscription data and progress will be preserved during temporary suspensions
 
 ---
 
