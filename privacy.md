@@ -23,7 +23,8 @@ The data controller is the **individual developer of Seriously (EU‑based priva
 ## Information I Collect
 
 - **Account Information.** If you sign in with Apple or Google, I receive identifiers from those providers (e.g., name, email). I do **not** receive your passwords.
-- **Profile & Wellness Data.** Age, weight, height, dietary preferences or restrictions, calorie targets, and similar wellness details you choose to enter. Some entries may be considered **health‑related data**; they’re processed only with your explicit consent, which you give when entering them in the App.
+- **Profile & Wellness Data.** Age, weight, height, dietary preferences or restrictions, calorie targets, and similar wellness details you choose to enter. Some entries may be considered **health‑related data**; they're processed only with your explicit consent, which you give when entering them in the App.
+- **Food Photos & Images.** Photos of meals and food you upload for calorie tracking and AI analysis. These images may contain visual information about your food, meals, dining environment, and occasionally metadata (e.g., time, location if enabled on your device).
 - **AI Chat Inputs.** The questions and messages you submit to the AI coach. Avoid sharing highly sensitive data.
 - **App & Device Data.** Logs about feature usage and basic device data (model, OS version, app version, and identifiers needed for functionality/troubleshooting).
 - **Subscription & Payment Data.** If you subscribe to Premium features:
@@ -32,7 +33,7 @@ The data controller is the **individual developer of Seriously (EU‑based priva
   - **Billing Information:** I do **not** receive, process, or store payment card details, billing addresses, or financial information - all payment processing is handled securely by Apple
   - **Purchase History:** Records of subscription start dates, renewals, cancellations, and refunds for customer support and legal compliance
 
-I collect **only what’s needed** to provide and improve the App.
+I collect **only what's needed** to provide and improve the App.
 
 ---
 
@@ -40,6 +41,8 @@ I collect **only what’s needed** to provide and improve the App.
 
 - **Provide & Personalize the Service.** Use profile/goals/chat inputs to tailor coaching and tracking features.
 - **AI‑Powered Responses.** Your chat inputs are sent securely to AI providers **(OpenAI and/or Google)** to generate responses.
+- **Food Photo Analysis.** Uploaded food photos are analyzed using AI to detect food items, estimate calories, and identify macronutrients.
+- **AI Model Training & Improvement.** Food photos and related data (in anonymized/de-identified form) are used to train and improve AI calorie detection, food recognition, and nutrition estimation models. This helps make the App more accurate and beneficial for all users. Your identity is removed before data is used for training.
 - **Account & Support.** Authenticate your login (Apple/Google), send critical service updates, and respond to support.
 - **Subscription & Payment Processing.** Verify subscription status, process renewals, handle subscription changes, manage access to Premium features, and maintain transaction records for customer support and legal compliance (via RevenueCat and Apple's systems).
 - **Improve & Secure the App.** Analyze aggregated usage (de‑identified where possible), fix bugs, and prevent abuse or fraud.
@@ -53,7 +56,7 @@ I will not use your data for purposes that are incompatible with the above witho
 
 - **Contract.** Most processing is necessary to provide the App you requested.
 - **Consent.** Special‑category (health‑related) data and marketing emails rely on your explicit consent; you can withdraw consent at any time.
-- **Legitimate Interests.** Improve the App, prevent fraud/abuse, and ensure security—balanced against your rights.
+- **Legitimate Interests.** Improve the App (including AI model training with anonymized data), prevent fraud/abuse, and ensure security—balanced against your rights.
 - **Legal Obligation.** Where laws require record‑keeping or disclosures.
 
 ---
@@ -82,8 +85,9 @@ I **do not** use third‑party data for advertising or profiling, and I avoid co
 
 ## Retention
 
-- **Account data** is kept while your account is active. Upon deletion or prolonged inactivity, it’s deleted or anonymized (subject to brief backup retention).
+- **Account data** is kept while your account is active. Upon deletion or prolonged inactivity, it's deleted or anonymized (subject to brief backup retention).
 - **Wellness entries & chat logs.** Kept so the App works (e.g., showing your history) and deleted on account deletion or upon your request. Not used for third‑party advertising.
+- **Food photos for training.** Photos used for AI model training are anonymized/de-identified and may be retained indefinitely to preserve AI model quality and accuracy, even after account deletion. This is necessary to maintain the functionality and accuracy of trained models that benefit all users.
 - **Subscription & transaction records** are kept for as long as your subscription is active, plus additional time as required for customer support, dispute resolution, tax compliance, and legal obligations (typically 7 years for financial records). Apple retains its own transaction records per their policies.
 
 ---
