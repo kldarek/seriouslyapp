@@ -58,7 +58,11 @@ I do **not** undertake to monitor user content, but I may remove content or susp
 
 ## User Content & AI Content
 
-- **Your content** (diet logs, queries, etc.) remains yours. You grant a limited, revocable, non‑exclusive, royalty‑free license to process it to provide/improve the Service.
+- **Your content** (diet logs, queries, food photos, etc.) remains yours. By submitting content to the App, you grant an **irrevocable, perpetual, worldwide, non‑exclusive, royalty‑free, sublicensable** license to use, store, reproduce, modify, and analyze your content to:
+  - Provide and operate the Service
+  - Improve the Service, including training and improving AI models (e.g., calorie detection, food recognition)
+  - Develop new features and functionality
+- **Food photos and images** you upload may be used (in anonymized/de-identified form) to train and improve our AI calorie detection and food recognition models. This helps make the App more accurate for all users. Training data may be retained even after account deletion to preserve model quality.
 - **AI responses** may be inaccurate or inappropriate. Use at your own risk. Report problematic outputs via email.
 
 ---
