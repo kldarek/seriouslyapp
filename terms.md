@@ -6,7 +6,7 @@ permalink: /terms
 
 # Seriously — Terms of Service
 
-**Last updated:** August 9, 2025
+**Last updated:** October 5, 2025
 
 Welcome to Seriously! These Terms govern your use of the App, which is built and maintained by a **private individual** (not a company). By downloading or using the App, you agree to these Terms and the Privacy Policy. If you don’t agree, do not use the App.
 
@@ -118,7 +118,14 @@ Except for your content, the App, code, designs, and materials are owned by the 
 
 ## Third‑Party Services
 
-Links or integrations (e.g., Apple Health, articles) are governed by third‑party terms. I’m not responsible for their content or practices.
+The App uses third-party service providers to deliver functionality:
+
+- **AI providers (OpenAI, Google):** Power the AI coaching and food analysis features
+- **Supabase:** Provides backend infrastructure for secure data storage, authentication, and database services
+- **RevenueCat:** Manages subscription verification and billing support
+- **Apple/Google:** Handle authentication and in-app purchases
+
+Links or integrations (e.g., Apple Health, articles) are governed by third‑party terms. I'm not responsible for their content or practices.
 
 ---
 

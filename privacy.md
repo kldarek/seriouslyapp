@@ -6,7 +6,7 @@ permalink: /privacy
 
 # Seriously — Privacy Policy
 
-**Last updated:** August 9, 2025
+**Last updated:** October 5, 2025
 
 Seriously (the "App") is an iOS mobile app that provides AI‑powered diet coaching, calorie tracking, and nutrition tips. I respect your privacy and am committed to protecting your personal data. This Privacy Policy explains what information I collect, how it's used and shared, and your rights.
 
@@ -65,7 +65,8 @@ I will not use your data for purposes that are incompatible with the above witho
 
 To power features, I use a small number of service providers acting on my instructions as **processors**. I share only what’s necessary to provide the App, I do **not** sell your data, and I do **not** use advertising/behavioral tracking SDKs.
 
-- **AI providers (e.g., OpenAI, Google).** Your prompts (and minimal context) are sent to generate a reply. I do not include your direct contact details in prompts. Processing is subject to each provider’s terms; I do not control their systems.
+- **AI providers (e.g., OpenAI, Google).** Your prompts (and minimal context) are sent to generate a reply. I do not include your direct contact details in prompts. Processing is subject to each provider's terms; I do not control their systems.
+- **Supabase (backend infrastructure).** Provides secure database, authentication, and backend services to store and manage your account data, wellness entries, chat logs, and food photos. Data is encrypted in transit and at rest.
 - **RevenueCat (subscription management).** Processes Apple purchase receipts, manages subscription status verification, handles subscription analytics, and facilitates customer support for billing issues. I do not receive your payment card details through this service.
 - **Apple / Google (auth & app stores).** Governed by their terms when you sign in or purchase.
 
