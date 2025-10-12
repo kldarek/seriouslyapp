@@ -6,7 +6,7 @@ permalink: /sources
 
 # Seriously — Scientific Sources
 
-**Last updated:** December 10, 2025
+**Last updated:** October 12, 2025
 
 Seriously provides AI-powered nutrition coaching and recommendations based on established scientific evidence. Below are the key scientific sources that inform our app's recommendations on healthy weight loss, dietary habits, and nutrition.
 
