@@ -44,6 +44,26 @@ In a 12-month RCT, a rapid, severe diet (≈double deficit) caused about 2× mor
 
 ---
 
+### Mifflin-St Jeor Equation (1990)
+
+Mifflin, M. D.; St Jeor, S. T.; Hill, L. A.; Scott, B. J.; Daugherty, S. A.; Koh, Y. O. "A new predictive equation for resting energy expenditure in healthy individuals." *Am J Clin Nutr* 51(2):241–247 (1990).
+
+This study derived the now-widely used Mifflin-St Jeor equation (REE = 10·weight + 6.25·height – 5·age + constant) and demonstrated its predictive validity for resting energy needs in healthy adults. It underpins the use of that formula for estimating BMR in the algorithm.
+
+→ [Read the full study on PubMed](https://pubmed.ncbi.nlm.nih.gov/2305711/)
+
+---
+
+### Hall et al., 2011 (Lancet) – Energy Imbalance & Bodyweight Change
+
+Hall, K. D.; et al. "Quantification of the effect of energy imbalance on bodyweight." *Lancet* 378(9793):826–837 (2011).
+
+This paper quantifies how sustained energy deficits or surpluses translate into bodyweight change, supporting the rule-of-thumb that ~7,700 kcal corresponds to ~1 kg of fat mass change. It justifies translating weekly kg goals into daily calorie deficits/surpluses in the algorithm.
+
+→ [Read the full study](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2811%2960679-X/fulltext)
+
+---
+
 ## Self-Monitoring & Tracking
 
 ### Burke et al., 2011 (Journal of the American Dietetic Association)
@@ -119,6 +139,28 @@ Phillips S.M. et al. "Systematic review and meta-analysis of protein intake to s
 This analysis notes that protein intakes in the range of ~1.2–1.6 g/kg body weight per day are associated with better lean mass preservation and gains in adults (especially during energy restriction or aging). A higher-protein diet (within this range) helps protect against muscle loss during weight loss and also boosts satiety compared to lower protein intakes.
 
 → [Read the systematic review](https://pmc.ncbi.nlm.nih.gov/articles/PMC8978023/)
+
+---
+
+## Protein & Resistance Training
+
+### Morton et al., 2018 (British Journal of Sports Medicine)
+
+Morton, R. W.; Murphy, K. T.; McKellar, S. R.; Schoenfeld, B. J.; Henselmans, M.; Helms, E.; Aragon, A. A.; Devries, M. C.; Banfield, L.; Krieger, J. W.; Phillips, S. M. "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training–induced gains in muscle mass and strength in healthy adults." *Br J Sports Med* 52(6):376–384 (2018).
+
+This meta-analysis found that protein supplementation significantly enhances gains in fat-free mass (FFM) and strength during resistance training. It also reports that beyond ~1.6 g/kg BW/day, further increases in protein yield diminishing returns. This underpins the algorithm's use of ~1.6 g/kg as a practical "upper effective" protein target.
+
+→ [Read the full study on PubMed](https://pubmed.ncbi.nlm.nih.gov/28698222/)
+
+---
+
+### Protein Intake Meta-Analysis (2022)
+
+"Systematic review and meta-analysis of protein intake to support muscle mass" (2022). *J Cachexia Sarcopenia Muscle* (Wiley).
+
+This review synthesizes multiple trials to examine how increasing daily protein intake relates to changes in lean body mass. It finds that while protein intake up to ~1.3 g/kg shows linear benefit, further gains beyond that show diminishing returns, especially in non–resistance-trained individuals. This nuance supports using a moderate-to-high protein range (1.2–1.6 g/kg) rather than extremely high values.
+
+→ [Read the full article](https://onlinelibrary.wiley.com/doi/10.1002/jcsm.12922)
 
 ---
 
