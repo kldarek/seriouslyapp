@@ -20,7 +20,7 @@ Centers for Disease Control and Prevention. "Steps for Losing Weight." Healthy W
 
 Recommends gradual weight loss (~1–2 lbs/week) and tracking food intake for better weight management.
 
-**Reference:** [Steps for Losing Weight | Healthy Weight and Growth | CDC](https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html)
+→ [Read the full CDC guidelines](https://www.cdc.gov/healthy-weight-growth/losing-weight/index.html)
 
 ---
 
@@ -30,7 +30,7 @@ Yanovski S., Brown A., et al. "Healthy Weight Control – Balancing Eating and E
 
 Emphasizes a sustainable pace of weight loss (1–2 lbs/week), the importance of adherence ("the best diet is one you can stick with"), self-monitoring (using apps/journals to track diet and activity), regular weighing, social support, adequate sleep, and stress management for successful weight control.
 
-**Reference:** [Healthy Weight Control | NIH News in Health](https://newsinhealth.nih.gov/2022/12/healthy-weight-control)
+→ [Read the full NIH article](https://newsinhealth.nih.gov/2022/12/healthy-weight-control)
 
 ---
 
@@ -40,7 +40,7 @@ Seimon R.V. et al. "Effect of Weight Loss via Severe vs Moderate Energy Restrict
 
 In a 12-month RCT, a rapid, severe diet (≈double deficit) caused about 2× more lean mass loss than a moderate diet, even though total weight lost was greater – supporting a slower caloric deficit (~500–750 kcal/day) to minimize muscle loss during weight loss.
 
-**Reference:** [Effect of Weight Loss via Severe vs Moderate Energy Restriction on Lean Mass and Body Composition | JAMA Network Open](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2753660)
+→ [Read the full study on JAMA Network](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2753660)
 
 ---
 
@@ -52,7 +52,7 @@ Burke L.E. et al. "Self-Monitoring in Weight Loss: A Systematic Review of the Li
 
 Reviews 22 studies and finds a consistent association between frequent dietary self-monitoring and greater weight loss, highlighting that tracking food intake raises awareness and improves weight-loss outcomes.
 
-**Reference:** [Self-Monitoring in Weight Loss: A Systematic Review of the Literature - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3268700/)
+→ [Read the full systematic review](https://pmc.ncbi.nlm.nih.gov/articles/PMC3268700/)
 
 ---
 
@@ -64,7 +64,7 @@ Hollands G.J. et al. "Portion, package or tableware size for changing selection 
 
 This comprehensive review concluded that people consistently consume more when given larger portions, packages, or dishes, and reducing these sizes leads to meaningful decreases in intake. Using smaller plates/bowls and pre-portioning servings (instead of eating from large packages) can therefore curb overeating by lowering energy intake without increasing hunger.
 
-**Reference:** [Portion, package or tableware size for changing selection and consumption of food - PubMed](https://pubmed.ncbi.nlm.nih.gov/26368271/)
+→ [Read the Cochrane review on PubMed](https://pubmed.ncbi.nlm.nih.gov/26368271/)
 
 ---
 
@@ -74,7 +74,7 @@ Parretti H.M. et al. "Efficacy of water preloading before main meals as a strate
 
 In this randomized trial, overweight adults who drank 500 mL of water ~30 minutes before each meal lost significantly more weight over 12 weeks than those who didn't (about 1.2–1.3 kg extra loss). This supports the tip that pre-meal water can promote fullness, leading to reduced meal calories and modest weight loss.
 
-**Reference:** [Efficacy of water preloading before main meals as a strategy for weight loss in primary care patients with obesity: RCT - PubMed](https://pubmed.ncbi.nlm.nih.gov/26237305/)
+→ [Read the study on PubMed](https://pubmed.ncbi.nlm.nih.gov/26237305/)
 
 ---
 
@@ -84,7 +84,7 @@ Flood J.E. & Rolls B.J. "Soup preloads in a variety of forms reduce meal energy 
 
 In this study, having a low-calorie vegetable soup or salad before a meal led participants to eat ~20% fewer calories at the meal compared to no starter. Starting meals with a broth-based soup or salad increases satiety and significantly reduces total calorie intake, supporting the advice to begin meals with low-energy-dense foods to prevent overeating.
 
-**Reference:** [Soup preloads in a variety of forms reduce meal energy intake - PubMed](https://pubmed.ncbi.nlm.nih.gov/17574705/)
+→ [Read the study on PubMed](https://pubmed.ncbi.nlm.nih.gov/17574705/)
 
 ---
 
@@ -96,7 +96,7 @@ American Heart Association. "How Much Sugar Is Too Much?" (Last reviewed Sept 23
 
 Official guidelines recommend limiting added sugars to ≤6 teaspoons per day for women (≈25 g) and ≤9 teaspoons for men (≈36 g), because excess added sugar provides caloric density with minimal satiety or nutrition. High-sugar drinks and sweets contribute to weight gain and should be replaced with water or low-calorie alternatives for better fullness and health.
 
-**Reference:** [How Much Sugar Is Too Much? | American Heart Association](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much)
+→ [Read the AHA sugar guidelines](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/how-much-sugar-is-too-much)
 
 ---
 
@@ -108,7 +108,7 @@ Leidy H.J. et al. "Beneficial effects of a higher-protein breakfast on appetite 
 
 Found that eating a high-protein breakfast (~35 g protein) led to greater daily fullness and significantly reduced evening snacking on high-fat/high-sugar foods, compared to a lower-protein cereal breakfast or skipping breakfast. Prioritizing protein in the morning (eggs, Greek yogurt, etc.) can thus decrease cravings later in the day.
 
-**Reference:** [Beneficial effects of a higher-protein breakfast on appetite control - PubMed](https://pubmed.ncbi.nlm.nih.gov/23446906/)
+→ [Read the study on PubMed](https://pubmed.ncbi.nlm.nih.gov/23446906/)
 
 ---
 
@@ -118,7 +118,7 @@ Phillips S.M. et al. "Systematic review and meta-analysis of protein intake to s
 
 This analysis notes that protein intakes in the range of ~1.2–1.6 g/kg body weight per day are associated with better lean mass preservation and gains in adults (especially during energy restriction or aging). A higher-protein diet (within this range) helps protect against muscle loss during weight loss and also boosts satiety compared to lower protein intakes.
 
-**Reference:** [Systematic review and meta‐analysis of protein intake to support muscle mass and function in healthy adults - PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC8978023/)
+→ [Read the systematic review](https://pmc.ncbi.nlm.nih.gov/articles/PMC8978023/)
 
 ---
 
@@ -130,7 +130,7 @@ Ma Y. et al. "A Randomized Trial of Single-Component vs Multicomponent Diet Goal
 
 Demonstrated that simply aiming for ≥30 grams of fiber per day (fruits, veggies, legumes, whole grains) led to weight loss and improved metabolic markers (blood pressure and insulin response) almost as effectively as a more complex diet. High-fiber diets enhance satiety and support metabolic health, aligning with the ≥30 g/day fiber tip.
 
-**Reference:** [Making one change — getting more fiber — can help with weight loss - Harvard Health](https://www.health.harvard.edu/blog/making-one-change-getting-fiber-can-help-weight-loss-201502177721)
+→ [Read about the study at Harvard Health](https://www.health.harvard.edu/blog/making-one-change-getting-fiber-can-help-weight-loss-201502177721)
 
 ---
 
@@ -142,7 +142,7 @@ Ruiz L.D., Zidenberg-Cherr S. et al. "Fat" – Nutrition & Health Info Sheet (Un
 
 Summarizes that the Dietary Guidelines for Americans advise getting about 20–35% of calories from fat (with <10% from saturated fat). Including healthy fats (olive oil, nuts, fatty fish) in this range is important for nutrient absorption and hormone production, and fat does contribute to satiety ("fats…help you feel full after a meal"). Thus, moderate healthy-fat intake (not ultra-low-fat) supports both hormones and fullness.
 
-**Reference:** [Nutrition & Health Info Sheets for Health Professionals - Fat | UC Davis Nutrition Department](https://nutrition.ucdavis.edu/outreach/nutr-health-info-sheets/pro-fat)
+→ [Read the UC Davis nutrition guidelines](https://nutrition.ucdavis.edu/outreach/nutr-health-info-sheets/pro-fat)
 
 ---
 
