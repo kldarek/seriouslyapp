@@ -6,7 +6,7 @@ permalink: /privacy
 
 # Seriously — Privacy Policy
 
-**Last updated:** October 5, 2025
+**Last updated:** October 24, 2025
 
 Seriously (the "App") is an iOS mobile app that provides AI‑powered diet coaching, calorie tracking, and nutrition tips. I respect your privacy and am committed to protecting your personal data. This Privacy Policy explains what information I collect, how it's used and shared, and your rights.
 
@@ -27,6 +27,12 @@ The data controller is the **individual developer of Seriously (EU‑based priva
 - **Food Photos & Images.** Photos of meals and food you upload for calorie tracking and AI analysis. These images may contain visual information about your food, meals, dining environment, and occasionally metadata (e.g., time, location if enabled on your device).
 - **AI Chat Inputs.** The questions and messages you submit to the AI coach. Avoid sharing highly sensitive data.
 - **App & Device Data.** Logs about feature usage and basic device data (model, OS version, app version, and identifiers needed for functionality/troubleshooting).
+- **Advertising & Analytics Data.** To measure and optimize marketing campaigns, I collect information through Meta's advertising SDK, including:
+  - **Advertising Identifiers:** Apple's Identifier for Advertisers (IDFA) and similar device identifiers
+  - **App Events & User Behavior:** Information about your interactions with the App (e.g., app opens, feature usage, subscription events) to measure campaign effectiveness and optimize ad delivery
+  - **Device & Technical Information:** IP address, device type, operating system, app version, and similar technical data
+  - **Conversion Events:** Actions you take in the App (such as completing registration or subscribing) that indicate campaign performance
+  This data is shared with Meta (Facebook) to help me understand which marketing efforts are effective and to show relevant ads to potential users on Meta's platforms.
 - **Subscription & Payment Data.** If you subscribe to Premium features:
   - **Purchase Information:** I receive confirmation of your purchase, subscription plan, renewal status, and purchase date via Apple's in-app purchase system through RevenueCat
   - **Transaction Records:** Apple transaction IDs, receipt data, and subscription status for verification and customer support
@@ -45,6 +51,7 @@ I collect **only what's needed** to provide and improve the App.
 - **AI Model Training & Improvement.** Food photos and related data (in anonymized/de-identified form) are used to train and improve AI calorie detection, food recognition, and nutrition estimation models. This helps make the App more accurate and beneficial for all users. Your identity is removed before data is used for training.
 - **Account & Support.** Authenticate your login (Apple/Google), send critical service updates, and respond to support.
 - **Subscription & Payment Processing.** Verify subscription status, process renewals, handle subscription changes, manage access to Premium features, and maintain transaction records for customer support and legal compliance (via RevenueCat and Apple's systems).
+- **Marketing & Advertising.** Measure the effectiveness of marketing campaigns, optimize ad targeting and delivery on Meta's platforms (Facebook, Instagram), track conversion events, and understand user acquisition channels. This helps me run cost-effective marketing campaigns to reach potential users.
 - **Improve & Secure the App.** Analyze aggregated usage (de‑identified where possible), fix bugs, and prevent abuse or fraud.
 - **Legal Compliance.** Comply with lawful requests and tax/transaction record‑keeping where applicable.
 
@@ -63,16 +70,15 @@ I will not use your data for purposes that are incompatible with the above witho
 
 ## AI and Third‑Party Processors
 
-To power features, I use a small number of service providers acting on my instructions as **processors**. I share only what’s necessary to provide the App, I do **not** sell your data, and I do **not** use advertising/behavioral tracking SDKs.
+To power features, I use a small number of service providers acting on my instructions as **processors**. I share only what's necessary to provide the App and operate marketing campaigns. I do **not** sell your personal data to third parties.
 
 - **AI providers (e.g., OpenAI, Google).** Your prompts (and minimal context) are sent to generate a reply. I do not include your direct contact details in prompts. Processing is subject to each provider's terms; I do not control their systems.
 - **Supabase (backend infrastructure).** Provides secure database, authentication, and backend services to store and manage your account data, wellness entries, chat logs, and food photos. Data is encrypted in transit and at rest.
 - **RevenueCat (subscription management).** Processes Apple purchase receipts, manages subscription status verification, handles subscription analytics, and facilitates customer support for billing issues. I do not receive your payment card details through this service.
+- **Meta Platforms (advertising & analytics).** The Meta Ads SDK collects and shares app usage data, device information, advertising identifiers (IDFA), and conversion events with Meta (Facebook) to measure advertising campaign performance, optimize ad delivery, and track return on ad spend. Meta processes this data as a **joint controller** under its own privacy policy. You can learn more about Meta's data practices at https://www.facebook.com/privacy/policy and control ad preferences through your device settings (iOS: Settings > Privacy & Security > Tracking, and Settings > Privacy & Security > Apple Advertising) and Meta's ad settings.
 - **Apple / Google (auth & app stores).** Governed by their terms when you sign in or purchase.
 
-Data may be processed in or transferred to countries outside the EU. Where this happens, I rely on appropriate safeguards and protect data in transit and at rest.
-
-I **do not** use third‑party data for advertising or profiling, and I avoid collecting more data than necessary to operate the App.
+Data may be processed in or transferred to countries outside the EU. Where this happens, I rely on appropriate safeguards and protect data in transit and at rest. Meta may process advertising data in the United States and other countries; Meta relies on Standard Contractual Clauses and other mechanisms approved by the European Commission for international data transfers.
 
 ---
 
@@ -96,6 +102,11 @@ I **do not** use third‑party data for advertising or profiling, and I avoid co
 ## Your Rights (GDPR)
 
 You can request **access, correction, deletion, restriction, portability,** and **objection** (including to marketing). You can withdraw consent at any time. To exercise rights, email **[seriouslyapp.com@gmail.com](mailto\:seriouslyapp.com@gmail.com)**. I may need to verify your identity. You also have the right to complain to your local data protection authority.
+
+**Advertising & Tracking Choices:**
+- **Limit Ad Tracking:** You can limit ad tracking on iOS by going to Settings > Privacy & Security > Tracking and disabling "Allow Apps to Request to Track." You can also disable personalized ads by going to Settings > Privacy & Security > Apple Advertising and turning off "Personalized Ads."
+- **Opt Out of Meta Advertising:** You can control how Meta uses your data for advertising through Meta's ad preferences at https://www.facebook.com/adpreferences and https://www.instagram.com/accounts/privacy_and_security/
+- **Impact of Opting Out:** Opting out of tracking may limit my ability to measure campaign effectiveness but will not affect core App functionality.
 
 ---
 
